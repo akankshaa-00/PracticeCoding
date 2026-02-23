@@ -7,6 +7,8 @@ public class PascalTriangle {
 
     public static void main(String[] args) {
         generateTriangle(5);
+
+        //QuestionLink:https://takeuforward.org/data-structure/program-to-generate-pascals-triangle
     }
 
     public static void generateTriangle(int n){
