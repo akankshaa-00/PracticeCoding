@@ -14,9 +14,9 @@ public class DicePermutation {
             return;
         }
 
-        for(int i=0;i<=tar;i++)
+        for(int i=1;i<=tar;i++)
         {
-
+            diceperm(p+i,tar-i);
         }
 
 
