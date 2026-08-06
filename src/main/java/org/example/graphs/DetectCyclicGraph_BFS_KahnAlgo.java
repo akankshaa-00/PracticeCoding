@@ -3,11 +3,15 @@ package org.example.graphs;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class DetectCyclicGraph_BFS_KahnAlgo {
 
     public static void main(String[] args) {
         int V = 6;
+        ExecutorService pool= Executors.newFixedThreadPool(10);
 
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
 
